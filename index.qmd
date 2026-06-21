@@ -1,0 +1,360 @@
+---
+title: "Gene Flow and Recent Lineage Colonization Constrain Genetic Differentiation Despite Local Adaptation"
+author: <p style="color:red;">Dylan Padilla, Lisa Brady,<br>and David Skelly</p>
+institute: <br>June 21, 2026<br>Yale Institute for Biospheric Studies<br>New Haven, Connecticut<br><center><img src = 'imgs/evo-logo.png' width = 500px height = 185px/><br></center>
+format: 
+  revealjs:
+    chalkboard: true
+    incremental: true
+    logo: imgs/yale-logo.png
+    footer: "🔗 [https://dylanpadilla.netlify.app/](https://dylanpadilla.netlify.app/)"
+    slide-number: true
+    multiplex: true
+    theme: [simple, assets/monash.scss]
+    show-slide-number: all
+    controls: true
+    width: 1280
+    height: 720
+    css: [assets/syntax-highlight.css, assets/custom.css, assets/pacman.css]
+    header-includes: |
+      <link rel="stylesheet" href="">
+execute:
+  echo: true
+---
+
+
+# [Outline]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+## []{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+### [Introduction]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+- Factors facilitating population structure and those  maintaining  genetic cohesion
+- Compelling system to examine the forces that shape genomic and phenotypic evolution among populations
+
+### [Methods]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+- Population structure and genetic differentiation
+- Demographic modeling
+- Outlier test of selection and phenotypic test for selection
+
+
+## []{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+### [Results and Discussion]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+- Elucidate a potential answer to the question of why populations remain genetically similar in the presence of strong selection
+
+
+# [Introduction]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+
+## [Polymorphism is widespread in nature]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+<center>
+
+<br><br>
+
+![](imgs/shell-variation.jpg)
+
+</center>
+
+:::
+
+::: {.column width='50%'}
+
+<center>
+
+![](imgs/butterflies-variation.png)
+
+</center>
+
+:::
+
+::::
+
+
+## [Common patterns of genetic structure]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<center>
+
+![](imgs/structure-example.png){width=92%}
+
+</center>
+
+## [Common patterns of genetic structure]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<center>
+<br><br>
+![](imgs/no-structure.png){width=90%}
+
+</center>
+
+
+## [<br><br><br>Does the lack of genetic structure reflect absence of divergence selection?]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+
+## [Selection-migration balance]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<center>
+![](imgs/gene-flow.png){width=70%}
+</center>
+
+
+## [Colonization to new environments]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<center>
+![](imgs/colonization.png){width=45%}
+</center>
+
+
+## [Compelling system to examine these hypotheses]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+<center>
+
+![](imgs/YMF_map.png)
+
+</center>
+
+:::
+
+::: {.column width='50%'}
+
+<center>
+![](imgs/pond1.png){width=60%}
+![](imgs/pond2.png){width=60%}
+</center>
+
+:::
+
+::::
+
+
+## [Compelling system to examine these hypotheses]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+<center>
+
+![](imgs/YMF_map.png)
+
+</center>
+
+:::
+
+::: {.column width='50%'}
+
+<center>
+<br><br>
+![](imgs/skelly2000-1.png)<br>
+Skelly, 2000. Ecology Letters.
+</center>
+
+:::
+
+::::
+
+
+## [Range of wood frog]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<center>
+
+![](imgs/wood-frog-colonization.png){width=80%}
+
+</center>
+
+
+
+# [Methods]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+
+## [Genetic analysis]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<br>
+
+- In 2018, we assembled a comprehensive dataset of ddRAD samples collected from wood frog populations distributed across 19 wetlands at Yale-Myers forest
+
+- We processed the raw reads using the ipyrad v.0.9.107 pipeline, using the wood frog reference genome and its annotation
+
+- To understand how individuals were genetically related, we estimated admixture proportions and the fixation index (Fst) across our samples.
+
+
+## [Demographic inference]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<br>
+
+We inferred the demographic history of the wood frog by employing a composite likelihood approach using *fastsimcoal2*
+
+
+## [Demographic inference]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<br>
+
+We inferred the demographic history of the wood frog by employing a composite likelihood approach using *fastsimcoal2*
+
+<center>
+![](imgs/demo-models.png)
+</center>
+
+## [Selection signatures across the genome]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<br>
+
+- To detect signatures of local adaptation across the genome of the wood frog, we performed a genotype$\times$environment association analysis based on a latent factor mixed model
+
+- We used the anottation file generated from the wood frog genome annotation described above to extract gene names associated with the candidate loci under selection
+
+
+## [Selection on phenotypes]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<center>
+![](imgs/embryos.png)
+</center>
+
+- We compared the divergence of a phenotypic trait such as embryonic development with the total genetic differentiation observed across populations of the wood frog (overall $F_{st}$)
+
+
+## [Selection on phenotypes]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<center>
+![](imgs/embryos.png)
+</center>
+
+- This experimental designed enabled us to partition the total genetic variance for embryonic development into two main components: the variance among populations and the variance within populations
+
+
+## [Selection on phenotypes]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<center>
+![](imgs/qst.png)
+</center>
+
+
+Where $\sigma^2_{GB}$ represents the genetic variance among populations and $\sigma^2_{GW}$ the additive genetic variance within populations
+
+
+
+# [Results]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+
+## [Populations of the wood frog are genetically homogeneous]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<center>
+![](imgs/YMF_str_diff.png){width=50%}
+</center>
+
+
+## [Recent divergence populations from a common ancestor approximately 24 generations ago]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+
+<center>
+![](imgs/YMF_demo_model.png){width=50%}
+</center>
+
+
+
+## [The genotype$\times$environment association analysis reveals two outlier loci:]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+<center>
+
+![](imgs/YMF_cand_snps.png)
+
+</center>
+
+:::
+
+::: {.column width='50%'}
+
+<center>
+</center>
+
+:::
+
+::::
+
+
+
+## [The genotype$\times$environment association analysis reveals two outlier loci:]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+<center>
+
+![](imgs/YMF_cand_snps.png)
+
+</center>
+
+:::
+
+::: {.column width='50%'}
+
+<center>
+
+![](imgs/YMF_allele_freq.png)
+
+</center>
+
+:::
+
+::::
+
+
+
+## [The genotype$\times$environment association analysis reveals two outlier loci:]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+<center>
+
+![](imgs/YMF_env.png)
+
+</center>
+
+:::
+
+::: {.column width='50%'}
+
+<center>
+
+![](imgs/YMF_allele_freq.png)
+
+</center>
+
+:::
+
+::::
+
+
+## [Significant signature of divergent selection]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<center>
+
+![](imgs/YMF_qst_fst.png){width=50%}
+
+</center>
+
+
+## [Concluding remarks]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+
+<br><br>
+
+This genomic signature of selection together with a remarkable phenotypic differentiation strongly suggests that natural selection overcomes the power of genetic drift, even in a landscape characterized by a recent colonization and significant connectivity
