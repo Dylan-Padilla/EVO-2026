@@ -95,7 +95,7 @@ execute:
 </center>
 
 
-## [<br><br><br>Does the lack of genetic structure reflect absence of divergence selection?]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+## [<br><br><br>Does the lack of genetic structure reflect absence of divergent selection?]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
 
 
 ## [Selection-migration balance]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
@@ -184,7 +184,7 @@ Skelly, 2000. Ecology Letters.
 
 - In 2018, we assembled a comprehensive dataset of ddRAD samples collected from wood frog populations distributed across 19 wetlands at Yale-Myers forest
 
-- We processed the raw reads using the ipyrad v.0.9.107 pipeline, using the wood frog reference genome and its annotation
+- We processed the raw reads with ipyrad v.0.9.107 pipeline, using the wood frog reference genome and its annotation
 
 - To understand how individuals were genetically related, we estimated admixture proportions and the fixation index (Fst) across our samples.
 
