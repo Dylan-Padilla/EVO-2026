@@ -247,14 +247,14 @@ Where $\sigma^2_{GB}$ represents the genetic variance among populations and $\si
 # [Results]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
 
 
-## [Populations of the wood frog are genetically homogeneous]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+## [Populations of the wood frog are genetically homogeneous]{style="font-family:Comic Sans MS;font-weight:normal;color:purple;font-size:45px"} {background=''}
 
 <center>
 ![](imgs/YMF_str_diff.png){width=50%}
 </center>
 
 
-## [Recent divergence populations from a common ancestor approximately 24 generations ago]{style="font-family:Comic Sans MS;font-weight:normal;color:purple"} {background=''}
+## [Recent divergence populations from a common ancestor approximately 24 generations ago]{style="font-family:Comic Sans MS;font-weight:normal;color:purple;font-size:45px"} {background=''}
 
 
 <center>
